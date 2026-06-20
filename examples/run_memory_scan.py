@@ -38,7 +38,7 @@ client = OpenAI(
 )
 
 # Free models on OpenRouter (no billing needed):
-MODEL = "mistralai/mistral-7b-instruct:free"
+MODEL = "openrouter/auto"
 # Other free options if the above hits limits:
 # "meta-llama/llama-3.2-3b-instruct:free"
 # "google/gemma-3-1b-it:free"
