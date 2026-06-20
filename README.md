@@ -28,29 +28,53 @@ This probe library tests whether a target LLM agent:
 
 ```
 garak-memory-poisoning/
+
 ├── garak_memory/
-│   ├── __init__.py
+
+│   ├── init.py
+
 │   ├── probes/
-│   │   ├── __init__.py
+
+│   │   ├── init.py
+
 │   │   ├── memory_injection.py      # Core memory poisoning probe
+
 │   │   ├── delayed_trigger.py       # Delayed activation probe
+
 │   │   └── exfiltration.py         # Data exfiltration via memory probe
+
 │   ├── detectors/
-│   │   ├── __init__.py
+
+│   │   ├── init.py
+
 │   │   └── trigger_detector.py      # Detects trigger activation in outputs
+
 │   └── harnesses/
-│       ├── __init__.py
+
+│       ├── init.py
+
 │       └── memory_harness.py        # Test harness connecting probe to Garak
+
 ├── tests/
+
 │   ├── test_probes.py
+
 │   └── test_detectors.py
+
 ├── examples/
+
 │   └── run_memory_scan.py
+
 ├── docs/
+
 │   └── probe_descriptions.md
+
 ├── setup.py
+
 ├── requirements.txt
+
 ├── LICENSE
+
 └── README.md
 ```
 
